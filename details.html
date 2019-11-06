@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Details</title>
+<title>Hackathon</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Travelix Project">
+<meta name="description" content="Hackathon Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">#
-<link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
-<link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-</head>
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<style>
+.dropbtn {
+  background-color: #1b1011;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 35px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #1b1011;}
+</style>
 
 <body>
 
@@ -99,13 +137,12 @@
 
 	</header>
 
-
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="#">home</a></li>
+				<li class="menu_item"><a href="index.html">home</a></li>
 				<li class="menu_item"><a href="index.html/#about">about us</a></li>
 				<li class="menu_item"><a href="index.html/#contact">contact</a></li>
 			</ul>
@@ -115,393 +152,130 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about_background.jpg"></div>
-		<div class="home_content">
-			<div class="home_title">Shopping Experience</div>
-		</div>
-	</div>
-
-	<!-- Offers -->
-
-	<div class="offers">
-
-		<!-- Search -->
-
 		
+		<!-- Home Slider -->
 
-		<!-- Offers -->
+		<div class="home_slider_container">
+			
+			<div class="owl-carousel owl-theme home_slider">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-1 temp_col"></div>
-				<div class="col-lg-11">
-					
-					<!-- Offers Sorting -->
-					<div class="offers_sorting_container">
-						<ul class="offers_sorting">
-							<li>
-								<span class="sorting_text">price</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }' data-parent=".price_sorting"><span>show all</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "price" }' data-parent=".price_sorting"><span>ascending</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text">Categories</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>default</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "name" }'><span>alphabetical</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text">Ratings</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="filter_btn" data-filter="*"><span>show all</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "stars" }'><span>ascending</span></li>
-									<li class="filter_btn" data-filter=".rating_3"><span>3</span></li>
-									<li class="filter_btn" data-filter=".rating_4"><span>4</span></li>
-									<li class="filter_btn" data-filter=".rating_5"><span>5</span></li>
-								</ul>
-							</li>
-							<li class="distance_item">
-								<span class="sorting_text">Color</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="num_sorting_btn"><span>Blue</span></li>
-									<li class="num_sorting_btn"><span>Black</span></li>
-									<li class="num_sorting_btn"><span>Olive</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text">Discount Range</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="num_sorting_btn"><span>20% and above</span></li>
-									<li class="num_sorting_btn"><span>30% and above</span></li>
-									<li class="num_sorting_btn"><span>50% and above</span></li>
-								</ul>
-							</li>
-						</ul>
+				<!-- Slider Item -->
+				<div class="owl-item home_slider_item">
+					<!-- Image by https://unsplash.com/@anikindimitry -->
+					<div class="home_slider_background" style="background-image:url(images/3.webp)"></div>
+
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+							<h1>New</h1>
+							<h1>Shopping Experience</h1>
+							
+						</div>
 					</div>
 				</div>
-
-				<div class="col-lg-12">
-					<!-- Offers Grid -->
-
-					<div class="offers_grid">
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(output/cap3.png)"></div>
-										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$70</div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Try this new design.</p>
-										
-										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
-										<div class="button book_button"><a href="#" data-toggle="modal" data-target="#myModal1">Try On<span></span><span></span><span></span></a></div>
-
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div id="myModal1" class="modal fade" role="dialog">
-						  <div class="modal-dialog">
-
-						    <!-- Modal content-->
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h4 class="modal-title"><b>Input and Output</b></h4>
-						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						      </div>
-						      <div class="modal-body">
-						        <img style="width: 100%;height: 100%;object-fit: cover;overflow: hidden;" src="output/1.png">						      
-						    </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-
-						  </div>
-						</div>
-
-						<!-- Offers Item -->
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(output/cap4.png)"></div>
-										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$70</div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Try this new design.</p>
-										
-										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
-										<div class="button book_button"><a href="#" data-toggle="modal" data-target="#myModal2">Try On<span></span><span></span><span></span></a></div>
-
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 
 				
 
-						<div id="myModal2" class="modal fade" role="dialog">
-						  <div class="modal-dialog">
-
-						    <!-- Modal content-->
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h4 class="modal-title"><b>Input and Output</b></h4>
-						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						      </div>
-						      <div class="modal-body">
-						        <img style="width: 100%;height: 100%;object-fit: cover;overflow: hidden;" src="output/2.png">						      
-						    </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-
-						  </div>
-						</div>
-
-						<!-- Offers Item -->
-<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(output/cap5.png)"></div>
-										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$70</div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Try this new design.</p>
-										
-										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
-										<div class="button book_button"><a href="#" data-toggle="modal" data-target="#myModal3">Try On<span></span><span></span><span></span></a></div>
-
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-
-						<div id="myModal3" class="modal fade" role="dialog">
-						  <div class="modal-dialog">
-
-						    <!-- Modal content-->
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h4 class="modal-title"><b>Input and Output</b></h4>
-						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						      </div>
-						      <div class="modal-body">
-						        <img style="width: 100%;height: 100%;object-fit: cover;overflow: hidden;" src="output/3.png">						      
-						    </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-
-						  </div>
-						</div>
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(output/cap3.png)"></div>
-										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$70</div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Try this new design.</p>
-										
-										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
-										<div class="button book_button"><a href="#" data-toggle="modal" data-target="#myModal4">Try On<span></span><span></span><span></span></a></div>
-
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div id="myModal4" class="modal fade" role="dialog">
-						  <div class="modal-dialog">
-
-						    <!-- Modal content-->
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h4 class="modal-title"><b>Input and Output</b></h4>
-						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						      </div>
-						      <div class="modal-body">
-						        <img style="width: 100%;height: 100%;object-fit: cover;overflow: hidden;" src="output/Capture.png">						      
-						    </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-
-						  </div>
-						</div>
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(output/cap4.png)"></div>
-										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$70</div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Try this new design.</p>
-										
-										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
-										<div class="button book_button"><a href="#" data-toggle="modal" data-target="#myModal5">Try On<span></span><span></span><span></span></a></div>
-
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div id="myModal5" class="modal fade" role="dialog">
-						  <div class="modal-dialog">
-
-						    <!-- Modal content-->
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h4 class="modal-title"><b>Input and Output</b></h4>
-						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						      </div>
-						      <div class="modal-body">
-						        <img style="width: 100%;height: 100%;object-fit: cover;overflow: hidden;" src="output/1.png">						      
-						    </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-
-						  </div>
-						</div>
-
-
-					</div>
-				</div>
-
 			</div>
-		</div>		
+			
+		
+			
+			<!-- Home Slider Nav - Next -->
+		
+			
+		</div>
+
 	</div>
 
+
+
+	<!-- CTA -->
+
+	<div class="cta">
+		<!-- Image by https://unsplash.com/@thanni -->
+		<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col">
+
+					<!-- CTA Slider -->
+
+					<div class="cta_slider_container">
+						<div class="owl-carousel owl-theme cta_slider">
+
+							<!-- CTA Slider Item -->
+							<div class="owl-item cta_item text-center">
+								<div class="cta_title">TRY ON</div>
+								<div class="row">
+
+
+								<div class="col-md-3">
+
+								<div class="dropdown">
+								  <button class="dropbtn">Select Person</button>
+								  <div class="dropdown-content">
+								    <button id="1_user"><img src="images/1.webp">Link 1</button>
+								    <button id="2_user"><img src="images/1.webp">Link 2</button>
+								    <button id="3_user"><img src="images/1.webp">Link 3</button>
+								  </div>
+								</div>
+								<div id="1_pic" style="display: none;"><img src="images/blog_1.jpg" style="padding-top: 5vh;"></div>
+								<div id="2_pic"><img src="images/blog_1.jpg" style="padding-top: 5vh;"></div>
+								<div id="3_pic"><img src="images/blog_1.jpg" style="padding-top: 5vh;"></div>
+							</div>
+
+								<!-- <div class="btn-group">
+								    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								      <img src="http://lorempixel.com/75/50/abstract/">
+								      0123 4567 8912 3456
+								      <span class="glyphicon glyphicon-chevron-down"></span>
+								    </button>
+								    
+								    <ul class="dropdown-menu">
+								      <li class="dropdown-header">Member name (you)</li>
+								      <li>
+								        <a href="#" title="Select this card"><img src="http://lorempixel.com/75/50/abstract/">0123 4567 8912 3456</a>
+								      </li>
+								      <li>
+								        <a href="#" title="Select this card"><img src="http://lorempixel.com/75/50/abstract/">0123 4567 8912 3456</a>
+								      </li>
+								      <li class="dropdown-header">Member name</li>
+								      <li>
+								        <a href="#" title="Select this card"><img src="http://lorempixel.com/75/50/abstract/">0123 4567 8912 3456</a>
+								      </li>
+								    </ul>
+								  </div>
+								</div> -->
+
+
+
+								<div class="col-md-3">rtyguhij</div>
+								<div class="col-md-3">rtyguhij</div>
+								</div><br>
+
+								<div class="row">
+									<div class="col-lg-3"><img src=""></div>
+								</div>
+
+								<center>
+								<div class="button cta_button"><div class="button_bcg"></div><a href="details.html">Show now<span></span><span></span><span></span></a></div>
+								</center>
+							
+
+							
+						</div>
+
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+					
+	</div>
+</div>
+
+		
 	<!-- Footer -->
 <section id="contact">
 	<footer class="footer">
@@ -576,7 +350,6 @@
 		</div>
 	</footer>
 </section>
-
 	<!-- Copyright -->
 
 	<div class="copyright">
@@ -585,8 +358,8 @@
 				<div class="col-lg-3 order-lg-1 order-2  ">
 					<div class="copyright_content d-flex flex-row align-items-center">
 						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 					</div>
 				</div>
 				<div class="col-lg-9 order-lg-2 order-1">
@@ -611,10 +384,35 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/offers_custom.js"></script>
+<script src="js/custom.js"></script>
+<script>
+
+	// $("#1_pic").hide();
+	$("#2_pic").hide();
+	$("#3_pic").hide();
+
+
+$(document).on("click", "#1_user", function () {
+
+		alert("button is clicked");
+		// $("#1_pic").show();
+		$("#1_pic").css("display","block");
+});
+	// $("#1_user").click(function () {
+	// 	// alert("button is clicked");
+	// 	// $("#1_pic").css("display","block");
+	// 	// $('#1_pic').attr('style','display:none');
+	// 	alert("button is clicked");
+	// 	$("#1_pic").show();
+	// });
+
+	// $("#1_pic").css("display","none");
+	// $("#2_pic").css("display","none");
+	// $("#3_pic").css("display","none");
+
+</script>
 
 </body>
 

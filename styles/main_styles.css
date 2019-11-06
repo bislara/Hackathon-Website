@@ -629,7 +629,7 @@ section
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: #1b1011;
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -1593,7 +1593,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 61.1%;
-	background: rgba(49, 18, 75, 0.8);
+	background: #1b1011;
 }
 .test_content
 {
@@ -1894,7 +1894,7 @@ section
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #31124b;
+	background: #1b1011;
 }
 .footer_title
 {
@@ -2108,7 +2108,7 @@ section
 
 .copyright
 {
-	background: #1f0733;
+	background:#1b1011;
 }
 .copyright_content
 {
