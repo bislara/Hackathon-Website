@@ -1,56 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hackathon</title>
+<title>Details</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Hackathon Project">
+<meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">#
+<link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
-<link rel="stylesheet" type="text/css" href="styles/display.css">
-<style>
-.dropbtn {
-  background-color: #1b1011;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  border-radius: 35px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #1b1011;}
-</style>
+</head>
 
 <body>
 
@@ -138,12 +99,13 @@
 
 	</header>
 
+
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="index.html">home</a></li>
+				<li class="menu_item"><a href="#">home</a></li>
 				<li class="menu_item"><a href="index.html/#about">about us</a></li>
 				<li class="menu_item"><a href="index.html/#contact">contact</a></li>
 			</ul>
@@ -153,158 +115,287 @@
 	<!-- Home -->
 
 	<div class="home">
-		
-		<!-- Home Slider -->
-
-		<div class="home_slider_container">
-			
-			<div class="owl-carousel owl-theme home_slider">
-
-				<!-- Slider Item -->
-				<div class="owl-item home_slider_item">
-					<!-- Image by https://unsplash.com/@anikindimitry -->
-					<div class="home_slider_background" style="background-image:url(images/3.webp)"></div>
-
-					<div class="home_slider_content text-center">
-						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-							<h1>New</h1>
-							<h1>Shopping Experience</h1>
-							
-						</div>
-					</div>
-				</div>
-
-				
-
-			</div>
-			
-		
-			
-			<!-- Home Slider Nav - Next -->
-		
-			
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about_background.jpg"></div>
+		<div class="home_content">
+			<div class="home_title">Shopping Experience</div>
 		</div>
-
 	</div>
 
+	<!-- Offers -->
 
+	<div class="offers">
 
-	<!-- CTA -->
+		<!-- Search -->
 
-	<div class="cta">
-		<!-- Image by https://unsplash.com/@thanni -->
-		<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
 		
+
+		<!-- Offers -->
+
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-lg-1 temp_col"></div>
+				<div class="col-lg-11">
+					
+					<!-- Offers Sorting -->
+					<div class="offers_sorting_container">
+						<ul class="offers_sorting">
+							<li>
+								<span class="sorting_text">price</span>
+								<i class="fa fa-chevron-down"></i>
+								<ul>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }' data-parent=".price_sorting"><span>show all</span></li>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "price" }' data-parent=".price_sorting"><span>ascending</span></li>
+								</ul>
+							</li>
+							<li>
+								<span class="sorting_text">Categories</span>
+								<i class="fa fa-chevron-down"></i>
+								<ul>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>default</span></li>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "name" }'><span>alphabetical</span></li>
+								</ul>
+							</li>
+							<li>
+								<span class="sorting_text">Ratings</span>
+								<i class="fa fa-chevron-down"></i>
+								<ul>
+									<li class="filter_btn" data-filter="*"><span>show all</span></li>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "stars" }'><span>ascending</span></li>
+									<li class="filter_btn" data-filter=".rating_3"><span>3</span></li>
+									<li class="filter_btn" data-filter=".rating_4"><span>4</span></li>
+									<li class="filter_btn" data-filter=".rating_5"><span>5</span></li>
+								</ul>
+							</li>
+							<li class="distance_item">
+								<span class="sorting_text">Color</span>
+								<i class="fa fa-chevron-down"></i>
+								<ul>
+									<li class="num_sorting_btn"><span>Blue</span></li>
+									<li class="num_sorting_btn"><span>Black</span></li>
+									<li class="num_sorting_btn"><span>Olive</span></li>
+								</ul>
+							</li>
+							<li>
+								<span class="sorting_text">Discount Range</span>
+								<i class="fa fa-chevron-down"></i>
+								<ul>
+									<li class="num_sorting_btn"><span>20% and above</span></li>
+									<li class="num_sorting_btn"><span>30% and above</span></li>
+									<li class="num_sorting_btn"><span>50% and above</span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-					<!-- CTA Slider -->
+				<div class="col-lg-12">
+					<!-- Offers Grid -->
 
-					<div class="cta_slider_container">
-						<div class="owl-carousel owl-theme cta_slider">
+					<div class="offers_grid">
 
-							<!-- CTA Slider Item -->
-							<div class="owl-item cta_item text-center">
-								<div class="cta_title">TRY ON</div>
-								<div class="row">
+						<!-- Offers Item -->
 
-
-								<div class="col-md-4">
-
-								<div class="dropdown">
-								  <button class="dropbtn" id="user_btn">Select Person</button>
-								  <div class="dropdown-content">
-								    <button id="user1"><img src="images/1.webp" style="height: 15vh;width: 15vw;">Link 1</button>
-								    <button id="user2"><img src="images/1.webp" style="height: 15vh;width: 15vw;">Link 2</button>
-								    <button id="user3"><img src="images/1.webp" style="height: 15vh;width: 15vw;">Link 3</button>
-								 	<button id="user4"><img src="images/1.webp" style="height: 15vh;width: 15vw;">Link 4</button>
-								    <button id="user5"><img src="images/1.webp" style="height: 15vh;width: 15vw;">Link 5</button>
-								  </div>
+						<div class="offers_item rating_4">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@kensuarez -->
+										<div class="offers_image_background" style="background-image:url(output/cap3.png)"></div>
+										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
+									</div>
 								</div>
-								<div class="pic">
-									<img src="images/blog_1.jpg"  style="padding-top: 5vh;">
-									<p style="color: black;">1st user</p>
-								</div>
-								<div class="pic2">
-									<img src="images/blog_1.jpg" style="padding-top: 5vh;">
-									<p style="color: black;">2nd user</p>
-								</div>
-								<div class="pic3">
-									<img src="images/blog_1.jpg" style="padding-top: 5vh;">
-									<p style="color: black;">3rd user</p>
-								</div>
-								<div class="pic4">
-									<img src="images/blog_1.jpg" style="padding-top: 5vh;">
-									<p style="color: black;">4th user</p>
-								</div>
-								<div class="pic5">
-									<img src="images/blog_1.jpg" style="padding-top: 5vh;">
-									<p style="color: black;">5th user</p>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">$70</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">Try this new design.</p>
+										
+										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
+										<div class="button book_button"><a href="try_on.html">Try On<span></span><span></span><span></span></a></div>
+
+										<div class="offer_reviews">
+											<div class="offer_reviews_content">
+												<div class="offer_reviews_title">very good</div>
+												<div class="offer_reviews_subtitle">100 reviews</div>
+											</div>
+											<div class="offer_reviews_rating text-center">8.1</div>
+										</div>
+									</div>
 								</div>
 							</div>
-
-
-								<div class="col-md-4">
-									<center>
-									<h3 style="color: black;">Select Dress</h3>
-									<br>
-
-									<button class="dress1"><img src="images/blog_1.jpg" id="d1" style="padding-top: 5vh;"><br>
-									<p style="color: black;">Dress 1</p>
-									</button>
-									<button class="dress2">
-									<img src="images/blog_1.jpg" id="d2" style="padding-top: 5vh;"><br>
-									<p style="color: black;">Dress 2</p>
-									</button>
-									<button class="dress3">
-									<img src="images/blog_1.jpg" id="d3" style="padding-top: 5vh;"><br>
-									<p style="color: black;">Dress 3</p>
-									</button>
-									<button class="dress4">
-									<img src="images/blog_1.jpg" id="d4" style="padding-top: 5vh;"><br>
-									<p style="color: black;">Dress 4</p>
-									</button>
-									<button class="dress5">
-									<img src="images/blog_1.jpg" id="d5" style="padding-top: 5vh;"><br>
-									<p style="color: black;">Dress 5</p>
-									</button>
-
-									</center>
-								</div>
-								<div class="col-md-4">
-								  	<button class="dropbtn" id="try_on" style="width: 14vw;">Try On</button>
-								  	<br>
-								  	<div class="t1" style="color: red;padding-top: 7vh;"></div>
-									<img src="images/blog_1.jpg" class="f1" style="padding-top: 5vh;"><br>
-									<img src="images/blog_1.jpg" class="f2" style="padding-top: 5vh;"><br>
-									<img src="images/blog_1.jpg" class="f3" style="padding-top: 5vh;"><br>
-									<img src="images/blog_1.jpg" class="f4" style="padding-top: 5vh;"><br>
-									<img src="images/blog_1.jpg" class="f5" style="padding-top: 5vh;"><br>
-
-								</div>
-								</div><br>
-
-
-								<center>
-								<div class="button cta_button"><div class="button_bcg"></div><a href="details.html">Show now<span></span><span></span><span></span></a></div>
-								</center>
-							
-
-							
 						</div>
 
-						
+
+						<!-- Offers Item -->
+						<div class="offers_item rating_4">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@kensuarez -->
+										<div class="offers_image_background" style="background-image:url(output/cap4.png)"></div>
+										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">$70</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">Try this new design.</p>
+										
+										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
+										<div class="button book_button"><a href="try_on.html">Try On<span></span><span></span><span></span></a></div>
+
+										<div class="offer_reviews">
+											<div class="offer_reviews_content">
+												<div class="offer_reviews_title">very good</div>
+												<div class="offer_reviews_subtitle">100 reviews</div>
+											</div>
+											<div class="offer_reviews_rating text-center">8.1</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Offers Item -->
+						<div class="offers_item rating_4">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@kensuarez -->
+										<div class="offers_image_background" style="background-image:url(output/cap5.png)"></div>
+										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">$70</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">Try this new design.</p>
+										
+										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
+										<div class="button book_button"><a href="try_on.html">Try On<span></span><span></span><span></span></a></div>
+
+										<div class="offer_reviews">
+											<div class="offer_reviews_content">
+												<div class="offer_reviews_title">very good</div>
+												<div class="offer_reviews_subtitle">100 reviews</div>
+											</div>
+											<div class="offer_reviews_rating text-center">8.1</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Offers Item -->
+
+						<div class="offers_item rating_4">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@kensuarez -->
+										<div class="offers_image_background" style="background-image:url(output/cap3.png)"></div>
+										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">$70</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">Try this new design.</p>
+										
+										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
+										<div class="button book_button"><a href="try_on.html">Try On<span></span><span></span><span></span></a></div>
+
+										<div class="offer_reviews">
+											<div class="offer_reviews_content">
+												<div class="offer_reviews_title">very good</div>
+												<div class="offer_reviews_subtitle">100 reviews</div>
+											</div>
+											<div class="offer_reviews_rating text-center">8.1</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Offers Item -->
+
+						<div class="offers_item rating_4">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@kensuarez -->
+										<div class="offers_image_background" style="background-image:url(output/cap4.png)"></div>
+										<div class="offer_name"><a href="single_listing.html">Cool design</a></div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">$70</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">Try this new design.</p>
+										
+										<div class="button book_button"><a href="#">Add to cart<span></span><span></span><span></span></a></div>
+										<div class="button book_button"><a href="try_on.html">Try On<span></span><span></span><span></span></a></div>
+
+										<div class="offer_reviews">
+											<div class="offer_reviews_content">
+												<div class="offer_reviews_title">very good</div>
+												<div class="offer_reviews_subtitle">100 reviews</div>
+											</div>
+											<div class="offer_reviews_rating text-center">8.1</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
-
 				</div>
-			</div>
-		</div>
-					
-	</div>
-</div>
 
-		
+			</div>
+		</div>		
+	</div>
+
 	<!-- Footer -->
 <section id="contact">
 	<footer class="footer">
@@ -379,6 +470,7 @@
 		</div>
 	</footer>
 </section>
+
 	<!-- Copyright -->
 
 	<div class="copyright">
@@ -387,8 +479,8 @@
 				<div class="col-lg-3 order-lg-1 order-2  ">
 					<div class="copyright_content d-flex flex-row align-items-center">
 						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 					</div>
 				</div>
 				<div class="col-lg-9 order-lg-2 order-1">
@@ -413,153 +505,10 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
-<script>
-
-	$(".pic").hide();
-	$(".pic2").hide();
-	$(".pic3").hide();
-	$(".pic4").hide();
-	$(".pic5").hide();
-
-	$(".f1").hide();
-	$(".f2").hide();
-	$(".f3").hide();
-	$(".f4").hide();
-	$(".f5").hide();
-
-
-	 var u1=0;
-	 var u2=0;
-	 var u3=0;
-	 var u4=0;
-	 var u5=0;
-
-
-	 var d1=0;
-	 var d2=0;
-	 var d3=0;
-	 var d4=0;
-	 var d5=0;
-
-
-// $(document).on("click", "#user_btn", function () {
-	document.querySelector("#user1").addEventListener("click", function () {
-
-		u1=1;
-		$(".pic").css("display","block");
-		$(".pic2").hide();
-		$(".pic3").hide();
-		$(".pic4").hide();
-		$(".pic5").hide();
-
-		
-	});
-
-	$("#user2").click(function () {
-		u2=1;
-		$(".pic").hide();
-		$(".pic3").hide();
-		$(".pic2").show();
-		$(".pic4").hide();
-		$(".pic5").hide();
-
-	});
-	$("#user3").click(function () {
-		u3=1;
-		$(".pic3").show();
-		$(".pic").hide();
-		$(".pic2").hide();
-		$(".pic4").hide();
-		$(".pic5").hide();
-
-	});
-	$("#user4").click(function () {
-		u4=1;
-		$(".pic4").show();
-		$(".pic").hide();
-		$(".pic2").hide();
-		$(".pic3").hide();
-		$(".pic5").hide();
-
-	});
-	$("#user5").click(function () {
-		u5=1;
-		$(".pic5").show();
-		$(".pic").hide();
-		$(".pic2").hide();
-		$(".pic3").hide();
-		$(".pic4").hide();
-
-	});
-
-	$(".dress1").click(function () {
-		d1=1;
-		$(".dress2").hide();
-		$(".dress3").hide();
-		$(".dress4").hide();
-		$(".dress5").hide();
-	});
-	$(".dress2").click(function () {
-		d2=1;
-		$(".dress1").hide();
-		$(".dress3").hide();
-		$(".dress4").hide();
-		$(".dress5").hide();
-	});
-	$(".dress3").click(function () {
-		d3=1;
-		$(".dress2").hide();
-		$(".dress1").hide();
-		$(".dress4").hide();
-		$(".dress5").hide();
-	});
-	$(".dress4").click(function () {
-		d4=1;
-		$(".dress2").hide();
-		$(".dress3").hide();
-		$(".dress1").hide();
-		$(".dress5").hide();
-	});
-	$(".dress5").click(function () {
-		d5=1;
-		$(".dress2").hide();
-		$(".dress3").hide();
-		$(".dress4").hide();
-		$(".dress1").hide();
-	});
-
-	$("#try_on").click(function () {
-		if (u1==1 && d1==1) 
-		{
-			$(".f1").show();
-		}
-		if (u2==1 && d2==1) 
-		{
-			$(".f2").show();
-		}
-		if (u3==1 && d3==1) 
-		{
-			$(".f3").show();
-		}
-		if (u4==1 && d4==1) 
-		{
-			$(".f4").show();
-		}
-		if (u5==1 && d5==1) 
-		{
-			$(".f5").show();
-		}
-		else
-		{
-			$(".t1").html("No matched combination")
-		}	
-
-	});
-
-</script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/offers_custom.js"></script>
 
 </body>
 
